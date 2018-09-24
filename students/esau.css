@@ -1,0 +1,60 @@
+/*   Reset  */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*-- Typography ---*/ 
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#main-site{
+  /*overflow: hidden;*/ /* Esto no hacer pero mejor que lo del clear*/
+  
+
+}
+
+
+
+/* Layout */
+
+.container{
+  margin: 0 20px;
+
+}
+
+
+
+@media (min-width: 768px){
+  section.perfil{
+    float:left;
+    width: 50%;
+    padding: 20px;
+  }
+  section.experiments{
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding: 0 20px;
+  }
+
+  .container {
+    max-width: 728px;
+  }
+}
+
+.hidden{
+  display: none;
+
+}
+
+
