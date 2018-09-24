@@ -17,7 +17,7 @@ function main(){
       e.currentTarget.innerText = 'Hide Perfil';
     }
   }
-
+  
   function handleClickS2(e){
     //e.classList.toggle('hidden');
     sectionS2.classList.toggle('hidden');
