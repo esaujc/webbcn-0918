@@ -10,29 +10,42 @@
 </head>
 
 <body>
-  <header class="container">
-    <a href="../index.html">Volver a la página principal</a>
-    <h1>Cohort 09 2018</h1>
+    
+  <header class="header-main">
+      <nav class="nav-bar">
+          <a href="../index.html"><img class ="img-logo" src="./images/ih-logo-50x54.png" alt="IronHack Logo"></a>  
+        <ul>
+          <li>Enlace 1</li>
+          <li>Enlace 2</li>
+          <li>Enlace 3</li>
+        </ul>
+        <img class="nav-burger" src="./images/burguer-menu50x50.png" alt="Burger Menu">            
+        
+      </nav>
   </header>
 
   <main id="main-site">
-    <section class="perfil">
-      <h2>Esaú</h2>
-      <img src="kashihara.jpg" class="perfil-imagen" alt="templo-kashihara">
-      <p>Kashihara (橿原市 Kashihara-shi) es una ciudad que se encuentra al centro de la prefectura de Nara, Japón.
-        Según datos del 2010, la ciudad tiene una población estimada de 124.658 habitantes y una densidad de 3.150 personas por km². El área total es de 39,52 km².
-          La ciudad fue fundada el 11 de febrero de 1956.
-          El nombre de la ciudad proviene del Palacio de Kashihara (橿原の宮 Kashihara no miya), lugar donde tradicionalmente el primer emperador de Japón, el Emperador Jinmu, gobernó y unificó la región de Yamato. También en la actual Kashihara se asentó la capital imperial de Fujiwara-kyō entre 694 y 710.
-          El relieve de la ciudad es generalmente plano, con excepción del Yamato Sanzan, tres grandes montes cercanos que sobresalen de la cuenca de Nara: el Monte Unebi (198,8 m), el Monte Miminashi (139,6 m) y el Monte Amanokagu (152,4 m). Por Kashihara atraviesan los ríos Asuka (al centro) y Soga (al oeste).
-        </p>
-        <em>Un viaje sólo es el inicio de un camino...</em>
-      <h3>Intereses y hobbies</h3>
-      <ul class="perfil-lista">
-        <li>Pasear.</li>
-        <li>Viajar.</li>
-        <li>Tomar un café con los amigos.</li>
-        <li>Leer cuando tengo tiempo y no me van a interrumpir.</li>
-      </ul>
+    <div class="main-space"></div>
+    <section class="perfil container">  
+      <article class="perfil-article">
+        <h2></h2>
+        <img src="./images/esau.png"  class="perfil-imagen" alt="templo-kashihara">
+        <p>
+          </p>
+          <em>Un viaje sólo es el inicio de un camino...</em>
+      </article>
+    
+    
+      <article class="perfil-hobbies">
+        <h3>Intereses y hobbies</h3>
+        <ul class="perfil-lista">
+          <li>Pasear.</li>
+          <li>Viajar.</li>
+          <li>Tomar un café con los amigos.</li>
+          <li>Leer cuando tengo tiempo y no me van a interrumpir.</li>
+        </ul>
+    </article>
+  
     </section>
 
     <section class="experiments">
@@ -50,6 +63,21 @@
         </div>
       
         <footer>
+          <div class="setInterval">
+            </div>
+            <button class="initInterval">Iniciar Cuenta</button>
+            <button hidden="true" class="stopInterval2">Parar Cuenta2</button>
+            <button hidden="true" class="stopInterval1">Parar Cuenta</button>
+        
+            <label for="">Students</label>
+            <div class="input-student container">
+              <input type="text">
+              <div class="search-result container">
+                
+              </div>
+          </div>
+
+
           <p>Created in: XXXXX</p>
         </footer>
 
@@ -62,7 +90,10 @@
       <button class="hiddeS2">Ocultar Sección 2</button>
     </div>
     
+    
+
   </main>
+  <script type="text/javascript" src="../students.js"></script>
   <script type="text/javascript" src="esau.js"></script>
   </body>
 </html>

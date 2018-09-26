@@ -19,7 +19,7 @@ body {
 
 #main-site{
   /*overflow: hidden;*/ /* Esto no hacer pero mejor que lo del clear*/
-  
+  /* padding-top: 120px; */
 
 }
 
@@ -27,29 +27,151 @@ body {
 
 /* Layout */
 
-.container{
+/* header nav.container{
   margin: 0 20px;
+} */
+header.header-main{
+  /* position: fixed; */
+  width: 100%;
+  padding-top: 20px;
+  background: #fff; 
+  background-image:  url(./images/japan.jpg);
+  height: 180px;
+}
+.main-space{
+  width: 100%;
+  height: 30px;
+  background-color: rgb(216, 205, 205);
+}
+nav{
+  position: fixed;
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: space-between; 
+  /*flex-flow: row wrap;*/
+  align-items: center; /* Vertical*/
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  /* background-attachment */
+}  
+nav a{
+  /*flex-grow: 1;*/
+  width: 20%;
+ /* align-content: left;*/
+ /* order: 1;*/
+}
+nav ul>li{
+  display: inline-block;
 
 }
+header .nav-bar ul {
+  display: none;
+}
 
+header .nav-japan{
+  width: 100%;
+  
+}
 
+header nav.nav-bar{
+  /* max-width: 728px; */
+  padding: 20px;
+}
+
+.container{
+  width:100%;
+  margin: 0 auto;
+  padding: 0 5px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-article{
+  width: 100%;
+  order:2;
+  flex-grow:1;
+}
+.perfil-hobbies{
+  order:2;
+  flex-grow:1;
+}
 
 @media (min-width: 768px){
+  
+  header{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between; 
+
+  }  
+  header.header-main{
+    height: 225px;
+
+  }
+  .main-space{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(216, 205, 205);
+  }
+  header nav.nav-bar{
+    /* max-width: 728px; */
+    /* max-width: 100%; */
+    padding: 20px;
+    height: 90px;
+  }
+  header nav img.img-logo{
+    /* Cambio la imagen y pongo otra más grande*/
+    content: url(./images/ih-logo-79x85.png);
+  } 
+
+  header .nav-bar ul {
+    display: inherit;
+  }
+  header .nav-bar .nav-burger{
+    display: none;
+  }
+
+
+
   section.perfil{
-    float:left;
-    width: 50%;
+    /* float:left; */
+    width: 100%;
     padding: 20px;
   }
   section.experiments{
-    float: right;
-    width: 50%;
+    /* float: right; */
+    width: 100%;
     text-align: right;
     padding: 0 20px;
   }
 
-  .container {
-    max-width: 728px;
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+
   }
+  .perfil-article{
+    width: 50%;
+    order:1;
+    flex-grow:1;
+    
+  }
+  .perfil-hobbies{
+    width: 50%;
+    order:2;
+    flex-grow:1;
+    
+    color: white;
+  }
+
 }
 
 .hidden{
